@@ -130,7 +130,9 @@ console.log("3'e tam bölünen sayılar: ", ucetambolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((acc, yeni) => acc + yeni, 0);
+
+console.log("3'e tam bölünen sayıların toplamı: ", ucebolunenlerintoplami);
 
 // 3d çözümü
 

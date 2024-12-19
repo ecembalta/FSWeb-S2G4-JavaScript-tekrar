@@ -148,7 +148,26 @@ console.log("500'den küçük sıralı sayılar: ", siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+tekraredensayilar = [];
+const sayiTekrari = {};
+
+for (const index of sayilar) {
+  if (sayiTekrari[index] !== undefined) {
+    sayiTekrari[index]++;
+  } else {
+    sayiTekrari[index] = 1;
+  }
+}
+
+for (const index in sayiTekrari) {
+  if (sayiTekrari[index] > 1) {
+    tekraredensayilar.push(
+      `${index} sayısı ${sayiTekrari[index]} kere tekrar edilmiştir.`
+    );
+  }
+}
+
+console.log("Tekrar eden sayılar: ", tekraredensayilar);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 

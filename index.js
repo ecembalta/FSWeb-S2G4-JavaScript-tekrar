@@ -142,7 +142,9 @@ console.log("500'den küçük sayılar: ", besyuzdenkucuksayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
+
+console.log("500'den küçük sıralı sayılar: ", siralisayilar);
 
 // 3f çözümü
 
